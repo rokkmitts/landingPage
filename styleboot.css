@@ -1,0 +1,185 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: #fff;
+  background-color: #000 !important;
+  width: 100%;
+  height: 20vh;
+}
+
+nav {
+  background-color: #000;
+  /* border: blueviolet solid 4px; */
+  margin: 2%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #9e9e9ec5;
+}
+
+nav a:hover {
+  transition: 0ms;
+  color: #ffffffd6;
+}
+
+#logo {
+  font-size: large;
+  text-transform: uppercase;
+  letter-spacing: 0.7em;
+  line-height: 1.5em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  transition: 0.5ms;
+  color: #4f4f4f;
+  text-shadow: 0 0 0 transparent, 0 0 1px hsl(42, 90%, 45%),
+    0 0 2px rgba(255, 174, 0, 0.5), 0 0 4px hsl(42, 90%, 45%),
+    0 0 9px hsl(42, 90%, 45%), 0 0 16px hsl(42, 90%, 45%),
+    0 0 44px hsl(42, 90%, 45%);
+  animation: flicker 0.1ms infinite alternate;
+}
+
+@keyframes flicker {
+  100% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  89% {
+    opacity: 0.9;
+  }
+  88% {
+    opacity: 0.8;
+  }
+  87% {
+    opacity: 0.7;
+  }
+  86% {
+    opacity: 0.6;
+  }
+}
+
+#logo:hover {
+  transition: 1.8s;
+  color: hsla(0, 0%, 100%, 0.893);
+  transform: scaleY(1.45);
+}
+
+video {
+  width: 100% !important;
+  height: auto !important; /*viewport height*/
+}
+
+#carouselshell {
+  overflow: hidden;
+  -webkit-transform: translateX(0);
+  border-radius: 22px;
+  box-shadow: 0 19px 51px 0 rgba(0, 0, 0, 0.16),
+    0 14px 19px 0 rgba(0, 0, 0, 0.07);
+}
+
+#carouselcontent {
+  height: 100% !important;
+  position: relative !important;
+}
+
+#artistbio {
+  margin: 2%;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+}
+
+.bioimg {
+  max-width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.bioimg img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+.biotext {
+  max-width: 736px;
+  text-align: center;
+  float: right;
+}
+
+footer {
+  width: 100%;
+  margin: 0 auto !important;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  border-top: #4f4f4f solid 1px;
+  font-family: "Fake Receipt";
+}
+
+#legal {
+  margin: 1% 0;
+  text-align: center;
+}
+
+#legal a {
+  text-decoration: none;
+  color: hsl(0, 0%, 72%);
+}
+
+#legal a:hover {
+  transition: 1s;
+  color: #fff;
+  text-decoration-line: underline;
+}
+
+#subscribe {
+  letter-spacing: 0.05em;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+#form {
+  display: block;
+}
+
+input {
+  display: table-cell;
+  margin: 2px;
+  padding: 4px;
+  color-scheme: dark;
+}
+
+#subbutton {
+  position: relative;
+  align-self: center;
+  margin-top: 2%;
+  padding: 7px 12px;
+  background-color: #000;
+  background-image: linear-gradient(black, #353535c5);
+  border: #353535c5 solid 2px;
+  color: #9e9e9ec5;
+  font-weight: 900;
+  border-radius: 8px;
+  width: inherit;
+  margin-left: 2px;
+}
+
+#subbutton:hover {
+  transition: 0.4s;
+  background-color: hsl(0, 0%, 76%);
+  background-image: linear-gradient(black, #353535c5);
+  color: hsl(0, 0%, 74%);
+  border: hsla(0, 0%, 21%, 0.674) solid 2px;
+}

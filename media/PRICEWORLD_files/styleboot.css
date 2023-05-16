@@ -1,0 +1,113 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: #fff;
+  background-color: #000 !important;
+  width: 100%;
+  height: 20vh;
+}
+
+nav {
+  background-color: #000;
+  /* border: blueviolet solid 4px; */
+  margin: 2%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #9e9e9ec5;
+}
+
+nav a:hover {
+  transition: 0ms;
+  color: #ffffffd6;
+}
+
+#logo {
+  text-transform: uppercase;
+  letter-spacing: 0.7em;
+  line-height: 1.5em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  transition: 0.5ms;
+  color: #4f4f4f;
+  /* position: fixed; */
+}
+
+#logo:hover {
+  transition: 1.5s;
+  color: hsla(0, 0%, 100%, 0.651);
+  font-size: 18px;
+}
+
+footer {
+  margin: 0 2%;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 2%;
+  border-top: #4f4f4f solid 1px;
+  font-family: "Fake Receipt";
+}
+
+#legal {
+  text-align: center;
+}
+
+#legal a {
+  text-decoration: none;
+  color: hsl(0, 0%, 72%);
+}
+
+#legal a:hover {
+  transition: 0.5s;
+  color: #fff;
+  text-decoration-line: underline;
+}
+
+#subscribe {
+  letter-spacing: 0.05em;
+  line-height: 3em;
+}
+
+#form {
+  display: block;
+}
+
+input {
+  display: table-cell;
+  margin: 2px;
+  padding: 4px;
+  color-scheme: dark;
+}
+
+#subbutton {
+  position: relative;
+  align-self: center;
+  margin-top: 2%;
+  padding: 7px 12px;
+  background-color: #000;
+  background-image: linear-gradient(black, #353535c5);
+  border: #353535c5 solid 2px;
+  color: #9e9e9ec5;
+  font-weight: 900;
+  border-radius: 8px;
+  width: inherit;
+  margin-left: 2px;
+}
+
+#subbutton:hover {
+  transition: 0.4s;
+  background-color: hsl(0, 0%, 76%);
+  background-image: linear-gradient(black, #353535c5);
+  color: hsl(0, 0%, 74%);
+  border: hsla(0, 0%, 21%, 0.674) solid 2px;
+}
